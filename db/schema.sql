@@ -1,10 +1,8 @@
-drop database users;
+CREATE DATABASE IF NOT EXISTS users;
 
-create database users;
+USE users;
 
-use users;
-
-create table user (
+CREATE TABLE user (
   id int not null auto_increment,
   full_name varchar(200),
   email varchar(200),

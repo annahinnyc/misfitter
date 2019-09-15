@@ -73,7 +73,7 @@ class App extends React.Component {
     return (
       <div>
         {this.state.current < 0 ? (
-          <button onClick={this.next}>Checkout</button>
+          <button onClick={this.next}>Start Misfitter Questionnaire</button>
         ) : (
           <div>
             {forms[this.state.current]}
@@ -115,13 +115,12 @@ const F1 = ({handleInputChange, formInput}) => (
   <div>
     <TextBox name="name" label="Name" handleInputChange={handleInputChange} formInput={formInput} />
     <TextBox name="email" label="Email" handleInputChange={handleInputChange} formInput={formInput} />
-    <TextBox name="password" label="Password" handleInputChange={handleInputChange} formInput={formInput} />
   </div>
 );
 
 const Confirm = ({home, formInput, clearFormData}) => {
   const submitData = () => {
-    const endpoint = 'http://localhost:3100/formSubmit';
+    const endpoint = `https://misfitter.herokuapp.com:${process.env.PORT}/formSubmit`;
 
     fetch(endpoint, {
       method: 'POST',
@@ -142,9 +141,8 @@ const Confirm = ({home, formInput, clearFormData}) => {
     <div>
       <p>{formInput.name}</p>
       <p>{formInput.email}</p>
-      <p>{formInput.password}</p>
       <br />
-      <button onClick={submitData}>Purchase</button>
+      <button onClick={submitData}>Submit Questionnaire</button>
     </div>
   );
 }

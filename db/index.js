@@ -6,19 +6,27 @@ let dbUserName = process.env.DATABASE_USERNAME;
 let dbPassword = process.env.DATABASE_PASSWORD;
 let dbName = process.env.DATABASE_NAME;
 
-const db = mysql.createConnection({
+const pool = mysql.createPool({
+  connectionLimi: 10,
   host: dbURL,
   user: dbUserName,
   password: dbPassword,
   database: dbName
 });
 
-db.connect(function(err) {
-  if (err) { 
-    throw err; 
-  } else {
-    console.log('connected!');
-  }
-});
+let formdb = {};
 
-module.exports = db;
+formdb.all = () => {
+  return new Promise((resolve, reject) => {
+    pool.query(`SELECT * FROM users`, (err, results) => {
+      if (err) { 
+        return reject(err); 
+      } else {
+        console.log('database results received!');
+        return resolve(results);
+      }
+    });
+  });
+};
+
+module.exports = formdb;
