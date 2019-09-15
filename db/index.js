@@ -13,7 +13,7 @@ const db = mysql.createPool({
   database: dbName
 });
 
-db.query(`SELECT * FROM ${dbName}`, function(err, results) {
+db.query(`SELECT * FROM users`, function(err, results) {
   if (err) { 
     throw err; 
   } else {
