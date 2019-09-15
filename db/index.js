@@ -10,6 +10,11 @@ const db = mysql.createConnection({
   database: dbName
 });
 
-db.connect();
+db.connect(function(err) {
+  if (err) { throw err; }
+  else {
+    
+  }
+});
 
 module.exports = db;
