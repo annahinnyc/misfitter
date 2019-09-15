@@ -10,7 +10,6 @@ const db = mysql.createPool({
   host: dbURL,
   user: dbUserName,
   password: dbPassword,
-  database: dbName
 });
 
 db.query(`SELECT * FROM users`, function(err, results) {
