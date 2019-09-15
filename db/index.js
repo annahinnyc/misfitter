@@ -13,11 +13,11 @@ const db = mysql.createPool({
   database: dbName
 });
 
-db.connect(function(err) {
+db.query(`SELECT * FROM ${dbName}`, function(err, results) {
   if (err) { 
     throw err; 
   } else {
-    console.log('connected!');
+    console.log('database results received!' + results);
   }
 });
 
