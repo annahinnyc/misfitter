@@ -1,150 +1,113 @@
+import React from "react";
+import { Route, withRouter, Redirect, Switch } from "react-router-dom";
+import Header from "./Header";
+import Landing from "./Landing";
+import Footer from "./Footer";
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      current: -1,
-      name: ''
+      isLoggedIn: false,
+      user: {}
     };
-
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.clearFormData = this.clearFormData.bind(this);
-    this.previous = this.previous.bind(this);
-    this.next = this.next.bind(this);
-    this.home = this.home.bind(this);
   }
 
-  next() {
+  componentDidMount() {
+    this.checkSession();
+  }
+
+  checkSession() {
+
+    axios.get('/session')
+      .then((response) => {
+        return this.checkLogin();
+      })
+      .catch((err) => {
+        console.log('no user in session');
+        this.setState({
+          isLoggedIn: false,
+          user: {}
+        })
+      });
+  }
+
+  checkLogin() {
+    return axios.get('/user')
+      .then((user) => {
+        console.log('current user is:', user.data.rows[0]);
+        this.setState({
+          isLoggedIn: true,
+          user: user.data.rows[0]
+        });
+      })
+      .catch((err) => {
+        console.log('sign in failed, try again');
+      });
+  }
+
+  setScript(script) {
     this.setState({
-      current: this.state.current + 1
+      script: script,
+      transcript: ""
+    });
+    this.props.history.push("/speech");
+  }
+
+  setLines(script) {
+    this.setState({
+      script: script,
+      transcript: ""
+    });
+    this.props.history.push("/linereader");
+  }
+
+  setTranscript(transcript) {
+    this.setState({
+      transcript: transcript
     });
   }
 
-  previous() {
+  setResults(results) {
     this.setState({
-      current: this.state.current - 1
+      results: results
+    });
+    this.props.history.push("/results");
+  }
+
+  setScore(score) {
+    this.setState({
+      score: score
     });
   }
 
-  home() {
-    this.setState({
-      current: -1
-    });
-  }
-
-  clearFormData() {
-    const formFields = ['name', 'email', 'password'];
-
-    for (const field of formFields) {
+  setUser(user) {
+    if (user) {
       this.setState({
-        [field]: ''
+        isLoggedIn: true,
+        user
+      });
+    } else if (!user) {
+      this.setState({
+        isLoggedIn: false,
+        user: {}
       });
     }
+    console.log("this.state", this.state);
   }
 
-  validateInput(name, value) {
-    if (name === 'password') {
-      if (value.length < 5) {
-        this.setState({
-          invalidInputs: true
-        })
-      } else {
-        this.setState({
-          invalidInputs: false
-        })
-      }
-    }
-  }
-
-  handleInputChange(event) {
-    const name = event.target.name;
-    const value = event.target.value;
-
+  scriptComparison(one, two) {
     this.setState({
-      [name]: value
-    }, () => this.validateInput(name, value));
+      comparison: ScriptComparison(one, two)
+    });
   }
-
-  render() {
-    const forms = [
-        <F1 handleInputChange={this.handleInputChange} formInput={this.state} />,
-        <Confirm home={this.home} formInput={this.state} clearFormData={this.clearFormData} />
-    ];
-
+  render () {
     return (
-      <div>
-        {this.state.current < 0 ? (
-          <button onClick={this.next}>Start Misfitter Questionnaire</button>
-        ) : (
-          <div>
-            {forms[this.state.current]}
-            <Navigation
-              next={this.next}
-              previous={this.previous}
-              current={this.state.current}
-              invalidInputs={this.state.invalidInputs}
-            />
-          </div>
-        )}
+      <div className="app">
+        <Header userLoggedIn={this.state.isLoggedIn} user={this.state.user} setUser={this.setUser.bind(this)}/>
+        <Footer />
       </div>
     );
   }
 }
-
-const Navigation = ({next, previous, current, invalidInputs}) => {
-  return (
-    <div>
-      {current > -1 ? <button onClick={previous}>Previous</button> : ''}
-      {current < 3 ? <button onClick={next} disabled={invalidInputs}>Next</button> : ''}
-    </div>
-  );
-};
-
-const TextBox = ({name, label, handleInputChange, formInput={formInput}}) => (
-  <label>
-    {label}
-    <input
-      type={name === 'password' ? 'password' : 'text'}
-      value={formInput[name]}
-      name={name}
-      onChange={handleInputChange}
-    ></input>
-  </label>
-);
-
-const F1 = ({handleInputChange, formInput}) => (
-  <div>
-    <TextBox name="name" label="Name" handleInputChange={handleInputChange} formInput={formInput} />
-    <TextBox name="email" label="Email" handleInputChange={handleInputChange} formInput={formInput} />
-  </div>
-);
-
-const Confirm = ({home, formInput, clearFormData}) => {
-  const submitData = () => {
-    const endpoint = `https://misfitter.herokuapp.com:${process.env.PORT}/formSubmit`;
-
-    fetch(endpoint, {
-      method: 'POST',
-      body: JSON.stringify(formInput),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-        clearFormData();
-        home(); // add conditional to change only if sumitted OK?
-      });
-  };
-
-  return (
-    <div>
-      <p>{formInput.name}</p>
-      <p>{formInput.email}</p>
-      <br />
-      <button onClick={submitData}>Submit Questionnaire</button>
-    </div>
-  );
-}
-
-ReactDOM.render(<App />, document.getElementById('app'));
+export default withRouter(App);
