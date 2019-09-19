@@ -4,7 +4,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoggedIn: false,
+      isLoggedIn: true,
       isLoggedOut: false
     };
   }
@@ -19,15 +19,12 @@ class Header extends React.Component {
   }
 
   render() {
-    const button = this.props.userLoggedIn ?
-      (<li><MyAccountButton setUserInSession={this.props.setUser.bind(this)} /></li>) : (<li><LoginModal setUserInSession={this.props.setUser.bind(this)} /></li>);
     return (
       <nav className="transparent">
         <div className="nav-wrapper">
           <a href="/"><img className="logo" src="media/logo.png" /></a>
           <ul id="nav-mobile" className="right hide-on-small-only">
-            {button}
-            <a className="btn waves-effect black" href="/upload">Upload</a>
+            <a className="btn waves-effect black" href="/upload">Welcome</a>
           </ul>
         </div>
       </nav>
