@@ -6,10 +6,8 @@ var DIST_DIR = path.join(__dirname, '/public');
 module.exports = {
   entry: ["./client/index.jsx"],
   output: {
-    path: __dirname + "/dist",
-    publicPath: "/dist",
-    chunkFilename: "[name].bundle.js",
-    filename: "bundle.js"
+    filename: 'bundle.js',
+    path: DIST_DIR
   },
   module : {
     rules: [
