@@ -31,7 +31,7 @@ class Landing extends React.Component {
             <div className="container">
               <h3 className="valign landing-text white-text">Get Misfitter</h3>
               <div className="landing-text flow-text white-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </div>
             </div>
             <div className="parallax"><img src="media/work.jpg" /></div>
@@ -69,4 +69,4 @@ class Landing extends React.Component {
   }
 }
 
-module.exports = Landing;
+export default Landing;

@@ -8,4 +8,4 @@ const Footer = (props) => (
   </footer>
 );
 
-module.exports = Footer;
+export default Footer;
