@@ -42,9 +42,6 @@ class About extends React.Component {
                 </div>
 
               </div>
-            </div>
-
-            <div className="card-content">
               <div id="birdie" className="row">
                 <div className="col s12 m6">
                   <img className="responsive-img z-depth-2 avatar" src="" />
@@ -67,7 +64,6 @@ class About extends React.Component {
                     lorem ipsum
                   </p>
                 </div>
-
               </div>
             </div>
 
