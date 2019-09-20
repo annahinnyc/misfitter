@@ -19,7 +19,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <Header user={this.state.user}/>
-        <h1>Welcome to Misfitter!</h1>
+        <h1 class="maxtield">Welcome to Misfitter!</h1>
         <ul id="nav-mobile" className="right hide-on-small-only">
           <a className="btn waves-effect black" href="https://docs.google.com/forms/d/e/1FAIpQLSfvCyPqr7L3isnppbfcGbiDAjuqDEQdY8JQco1mPpFlvFrDqw/viewform">Start Questionnaire</a>
         </ul>
