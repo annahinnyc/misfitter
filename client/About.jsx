@@ -19,13 +19,13 @@ class About extends React.Component {
             <div className="card-tabs">
               <ul className="tabs grey lighten-3">
                 <li className="tab">
-                  <a href="#annah" className="cyan-text">
-                    Beth
+                  <a href="#annah" className="teal-text">
+                    BETH
                   </a>
                 </li>
                 <li className="tab">
-                  <a href="#yufan" className="cyan-text">
-                    Birdie
+                  <a href="#yufan" className="teal-text">
+                    BIRDIE
                   </a>
                 </li>
               </ul>
@@ -40,10 +40,12 @@ class About extends React.Component {
                   <h5>Founder</h5>
                   <div>
                     <a href="" target="_blank" rel="noopener noreferrer">
-                      <img className="logo-link" src="media/github.png" />
+                      <img className="logo-link" src="media/
+                      " />
                     </a>
                     <a href="" target="_blank" rel="noopener noreferrer">
-                      <img className="logo-link" src="media/linkedin.png" />
+                      <img className="logo-link" src="media/
+                      " />
                     </a>
                   </div>
                   <p className="flow-text thin-text about-quote">
@@ -52,7 +54,6 @@ class About extends React.Component {
                   </p>
                 </div>
               </div>
-                <div className="col s12 m6">
                   <img className="responsive-img z-depth-2 avatar" src="" />
                 </div>
                 <div className="col s12 m6">
@@ -60,10 +61,10 @@ class About extends React.Component {
                   <h5>Founder</h5>
                   <div>
                     <a href="" target="_blank" rel="noopener noreferrer">
-                      <img className="logo-link" src="media/github.png" />
+                      <img className="logo-link" src="" />
                     </a>
                     <a href="" target="_blank" rel="noopener noreferrer">
-                      <img className="logo-link" src="media/linkedin.png" />
+                      <img className="logo-link" src="" />
                     </a>
                   </div>
                   <p className="flow-text thin-text about-quote">
@@ -81,10 +82,12 @@ class About extends React.Component {
                   <h5>Founder</h5>
                   <div>
                     <a href="" target="_blank" rel="noopener noreferrer">
-                      <img className="logo-link" src="media/github.png" />
+                      <img className="logo-link" src="media/
+                      " />
                     </a>
                     <a href="" target="_blank" rel="noopener noreferrer">
-                      <img className="logo-link" src="media/linkedin.png" />
+                      <img className="logo-link" src="media/
+                      " />
                     </a>
                   </div>
                   <p className="flow-text thin-text about-quote">
@@ -93,7 +96,6 @@ class About extends React.Component {
                   </p>
                 </div>
               </div>
-          </div>
         </div>
       </div>
     );
