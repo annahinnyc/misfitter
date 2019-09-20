@@ -19,6 +19,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <Header user={this.state.user}/>
+        <h1>Welcome to Misfitter!</h1>
         <Footer />
       </div>
     );
