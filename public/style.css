@@ -1,3 +1,5 @@
+@font-face { font-family: Maxtield; src: url('/assets/Maxtield.otf'); }
+
 body {
   font-size: 20px;
   min-height: 100%;
@@ -6,7 +8,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Maxtield", sans-serif;
 }
 
 span.wrong {
