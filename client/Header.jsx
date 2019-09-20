@@ -23,9 +23,6 @@ class Header extends React.Component {
       <nav className="transparent">
         <div className="nav-wrapper">
           <a href="/"><img className="logo" src="assets/icon.jpg" /></a>
-          <ul id="nav-mobile" className="right hide-on-small-only">
-            <a className="btn waves-effect black" href="https://docs.google.com/forms/d/e/1FAIpQLSfvCyPqr7L3isnppbfcGbiDAjuqDEQdY8JQco1mPpFlvFrDqw/viewform">Start Questionnaire</a>
-          </ul>
         </div>
       </nav>
     );
