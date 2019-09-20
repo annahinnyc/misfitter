@@ -20,11 +20,11 @@ class Header extends React.Component {
 
   render() {
     return (
-      <nav className="transparent">
+      <div className="transparent">
         <div className="nav-wrapper">
           <a href="/"><img className="logo" src="assets/icon.png" /></a>
         </div>
-      </nav>
+      </div>
     );
   }
 }

@@ -14,18 +14,13 @@ class About extends React.Component {
         <div className="container">
           <div className="card medium about-card grey lighten-4 z-depth-4">
             <div className="card-content">
-              <h5>About Us</h5>
+              <h5 class="maxtield">ABOUT US</h5>
             </div>
             <div className="card-tabs">
               <ul className="tabs grey lighten-3">
                 <li className="tab">
                   <a href="#annah" className="cyan-text">
                     Jane Darling
-                  </a>
-                </li>
-                <li className="tab">
-                  <a href="#ryan" className="active cyan-text">
-                    Jane Deer
                   </a>
                 </li>
                 <li className="tab">
