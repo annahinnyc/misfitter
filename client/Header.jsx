@@ -22,7 +22,7 @@ class Header extends React.Component {
     return (
       <nav className="transparent">
         <div className="nav-wrapper">
-          <a href="/"><img className="logo" src="assets/icon.jpg" /></a>
+          <a href="/"><img className="logo" src="assets/icon.png" /></a>
         </div>
       </nav>
     );
