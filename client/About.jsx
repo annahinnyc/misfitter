@@ -20,12 +20,12 @@ class About extends React.Component {
               <ul className="tabs grey lighten-3">
                 <li className="tab">
                   <a href="#annah" className="cyan-text">
-                    Jane Darling
+                    Beth
                   </a>
                 </li>
                 <li className="tab">
                   <a href="#yufan" className="cyan-text">
-                    Jane Doe
+                    Birdie
                   </a>
                 </li>
               </ul>
@@ -36,7 +36,7 @@ class About extends React.Component {
                   <img className="responsive-img z-depth-2 avatar" src="" />
                 </div>
                 <div className="col s12 m6">
-                  <h4>Jane Darling</h4>
+                  <h4>Beth</h4>
                   <h5>Founder</h5>
                   <div>
                     <a href="" target="_blank" rel="noopener noreferrer">
@@ -52,12 +52,11 @@ class About extends React.Component {
                   </p>
                 </div>
               </div>
-              <div id="ryan" className="row">
                 <div className="col s12 m6">
                   <img className="responsive-img z-depth-2 avatar" src="" />
                 </div>
                 <div className="col s12 m6">
-                  <h4>Jane Deer</h4>
+                  <h4>Beth</h4>
                   <h5>Founder</h5>
                   <div>
                     <a href="" target="_blank" rel="noopener noreferrer">
@@ -78,7 +77,7 @@ class About extends React.Component {
                   <img className="responsive-img z-depth-2 avatar" src="" />
                 </div>
                 <div className="col s12 m6">
-                  <h4>Jane Doe</h4>
+                  <h4>Birdie</h4>
                   <h5>Founder</h5>
                   <div>
                     <a href="" target="_blank" rel="noopener noreferrer">
@@ -94,7 +93,6 @@ class About extends React.Component {
                   </p>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
