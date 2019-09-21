@@ -73,10 +73,6 @@ span.missing {
   border-radius: 5px;
 }
 
-.speech-header {
-  text-align: center;
-}
-
 .avatar {
   max-height: 200px;
   min-height: 100px;
@@ -137,6 +133,14 @@ span.missing {
 .aboutus-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+h5.aboutus-content {
+  margin: 0 0 2em 0;
+}
+
+.about-quote {
+  padding: 2em;
 }
 
 .info-card {
@@ -254,11 +258,11 @@ span.missing {
   }
 
   .about-quote {
-    display: none;
+    padding: 2em;
   }
 
   .logo-link {
-    max-height: 3.5em;
+    max-height: 14em;
   }
 
   .wrapper.info {
