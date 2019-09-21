@@ -16,7 +16,7 @@ h3,h4,h5,h6 {
 }
 
 .lavender {
-  background-color: #f7f6f9;
+  background-color: #f7f6f9 !important;
 }
 
 .teal-text {
@@ -103,7 +103,7 @@ span.missing {
 }
 
 .logo-link {
-  max-height: 2em;
+  max-height: 17em;
 }
 
 .logo-link:hover {
@@ -140,7 +140,7 @@ h5.aboutus-content {
 }
 
 .about-quote {
-  padding: 2em;
+  padding: 1em 2em 2em 2em;
 }
 
 .info-card {
@@ -258,11 +258,11 @@ h5.aboutus-content {
   }
 
   .about-quote {
-    padding: 2em;
+    padding: 1em 2em 2em 2em;
   }
 
   .logo-link {
-    max-height: 14em;
+    max-height: 17em;
   }
 
   .wrapper.info {
