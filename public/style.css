@@ -114,6 +114,7 @@ span.missing {
 
 .logo-link {
   max-height: 17em;
+  margin: 1em;
 }
 
 .logo-link:hover {
@@ -149,7 +150,7 @@ h5.aboutus-content {
 }
 
 .about-quote {
-  padding: 1em 2em 2em 2em;
+  padding: 0 2em 0 2em;
 }
 
 .aboutus-ordered-list {
