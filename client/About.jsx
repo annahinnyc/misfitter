@@ -61,13 +61,10 @@ class About extends React.Component {
         <div className="container">
           <div className="card about-card lavender lighten-4">
             <div className="card-content">
-              <h3 class="adahybrid">FOUNDER'S STATEMENT</h3>
+              <h4 class="adahybrid">#misfitternyc</h4>
             </div>
             <img className="logo-link" src="assets/free_advice.jpg" />
             <div className="aboutus-content">
-              <p className="thin-text about-quote adahybrid">
-                #misfitternyc
-              </p>
               <p className="thin-text about-quote adahybrid">
                 Beth and Birdie founded Misfitter Podcast one winter night while sharing coconut cake, cocktails, and the memories of their New York City, GenX past. They longed for that old-school, downtown vibe: the random, in-person, happenstance meetings, the search for “missed connections” on the back of the Village Voice…
                 <br></br>
@@ -80,30 +77,24 @@ class About extends React.Component {
                 Each week, the super-secret, misfit-matching algorithm chooses a match. And each week, Beth and Birdie (after fierce disagreements, more cake, wild threats and various libations) choose two people to send on a date. Both couples go on their dates (on us!) and return to the podcast to discuss their time together. Will B&B beat the SSMMA? Tune in to find out! Let’s get it on!
               </p>
             </div>
-
-            <div className="container">
-              <div className="card about-card lavender lighten-4">
-                <div className="card-content">
-                  <h3 class="adahybrid">#findyourfit</h3>
-                </div>
-                <img className="logo-link" src="assets/free_advice.jpg" />
-                <div className="aboutus-content">
-                  <p className="thin-text about-quote adahybrid">
-                    #findyourfit
-                  </p>
-                  <p className="thin-text about-quote adahybrid">
-                    So how does this work?
-                    1. Click on our quiz, take it, and attach your photo.
-                    2. Follow us on Instagram and Twitter for updates.
-                    3. Listen to our podcast to find out if you’re the next one chosen to go on a date!
-                    4. We send you out on a date. You show up, share a few “special” moments through pictures and video, and have fun!
-                    5. You appear as a guest on our podcast and let us know what you did and how we did. Not chosen that week? More of a voyeur on the dating scene? No problem! Participate by listening and spreading the word.
-                    </p>
-                </div>
-              </div>
-            </div>
-
           </div>
+
+          <div className="card about-card lavender lighten-4">
+            <div className="card-content">
+                <h3 class="adahybrid">#findyourfit</h3>
+            </div>
+            <div className="aboutus-content">
+              <p className="thin-text about-quote adahybrid">
+                  So how does this work?
+                  1. Click on our quiz, take it, and attach your photo.
+                  2. Follow us on Instagram and Twitter for updates.
+                  3. Listen to our podcast to find out if you’re the next one chosen to go on a date!
+                  4. We send you out on a date. You show up, share a few “special” moments through pictures and video, and have fun!
+                  5. You appear as a guest on our podcast and let us know what you did and how we did. Not chosen that week? More of a voyeur on the dating scene? No problem! Participate by listening and spreading the word.
+                  </p>
+            </div>
+          </div>
+
         </div>
       </div>
     );
