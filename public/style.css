@@ -4,8 +4,9 @@
 body {
   font-size: 20px;
   min-height: 100%;
-  text-align: center;
+  text-align: left;
   background-color: #f7f6f9;
+  line-height: 1.75em;
 }
 
 .maxtield,h2 {
