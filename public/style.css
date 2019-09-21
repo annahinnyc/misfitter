@@ -59,7 +59,7 @@ span.missing {
 }
 
 .questionnaire {
-  height: 10em;
+  height: 17em;
   padding: 0.1em;
 }
 
@@ -116,6 +116,10 @@ span.missing {
 
 .input-field.upload {
   margin-top: 2em;
+}
+
+.card {
+  background-color: #f7f6f9;
 }
 
 .card.medium {
