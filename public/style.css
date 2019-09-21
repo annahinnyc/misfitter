@@ -1,12 +1,31 @@
+@font-face { font-family: Maxtield; src: url('/assets/Maxtield.otf'); }
+@font-face { font-family: ADAHybrid; src: url('/assets/ADAHybrid-Medium.otf'); }
+
 body {
   font-size: 20px;
   min-height: 100%;
   text-align: center;
-  background-color: rgba(238, 234, 223, 0.527);
+  background-color: #f7f6f9;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: "Poppins", sans-serif;
+.maxtield,h2 {
+  font-family: "Maxtield", sans-serif;
+}
+
+.adahybrid {
+  font-family: "ADAHybrid", sans-serif;
+}
+
+h3,h4,h5,h6 {
+  font-family: "ADAHybrid", sans-serif;
+}
+
+.lavender {
+  background-color: #f7f6f9 !important;
+}
+
+.teal-text {
+  color: #0E83A8;
 }
 
 span.wrong {
@@ -40,7 +59,12 @@ span.missing {
 }
 
 .logo {
-  height: 3em;
+  height: 7em;
+  padding: 0.1em;
+}
+
+.questionnaire {
+  height: 17em;
   padding: 0.1em;
 }
 
@@ -52,10 +76,6 @@ span.missing {
   max-height: 300px;
   min-height: 100px;
   border-radius: 5px;
-}
-
-.speech-header {
-  text-align: center;
 }
 
 .avatar {
@@ -88,7 +108,7 @@ span.missing {
 }
 
 .logo-link {
-  max-height: 2em;
+  max-height: 17em;
 }
 
 .logo-link:hover {
@@ -97,6 +117,10 @@ span.missing {
 
 .input-field.upload {
   margin-top: 2em;
+}
+
+.card {
+  background-color: #f7f6f9;
 }
 
 .card.medium {
@@ -111,31 +135,26 @@ span.missing {
   position: relative;
 }
 
-.speech-card {
-  min-height: 107px;
+.aboutus-content {
+  display: grid;
 }
 
-.script-text {
-  max-height: 600px;
-  overflow: hidden;
-  overflow-y: scroll;
+h5.aboutus-content {
+  margin: 0 0 2em 0;
 }
 
-.upload-card {
-  margin: 5em;
-  box-shadow: none;
-  background-color: inherit;
-  min-height: 203px;
+.about-quote {
+  padding: 1em 2em 2em 2em;
+}
+
+.aboutus-ordered-list {
+  text-align: left;
+  padding-left: 6em;
 }
 
 .info-card {
   height: 300px;
   padding-top: 2.1em;
-}
-
-.upload {
-  margin-top: 2em;
-  max-width: 95%;
 }
 
 #login {
@@ -235,6 +254,7 @@ span.missing {
 
   .about-card {
     margin: 1em;
+    height: 100%;
   }
 
   .upload-card {
@@ -247,11 +267,11 @@ span.missing {
   }
 
   .about-quote {
-    display: none;
+    padding: 1em 2em 2em 2em;
   }
 
   .logo-link {
-    max-height: 3.5em;
+    max-height: 17em;
   }
 
   .wrapper.info {
