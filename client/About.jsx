@@ -29,7 +29,8 @@ class About extends React.Component {
                   </div>
                   <p className="thin-text about-quote adahybrid">
                     Beth Farley is a lifelong misfit. As a child, she passed her time befriending trees, playing Galaga, and trying for long hours to move objects with her mind. These days, she enjoys spending time with her three boys, growing and cooking food, solving logic grid puzzles, and avoiding the need to make small talk.
-                    <br></br>
+                  </p>
+                  <p className="thin-text about-quote adahybrid">
                     Beth envisions Misfitter Podcast as an opportunity for nonconformists of all kinds to find camaraderie, friendship, and most importantly, love.
                   </p>
                 </div>
@@ -46,9 +47,11 @@ class About extends React.Component {
                   </div>
                   <p className="thin-text about-quote adahybrid">
                     Birdie Lark spent her formative years sneaking out of her suburban bedroom window to hang out with fellow misfits in 1980s downtown NYC.
-                    <br></br>
+                  </p>
+                  <p className="thin-text about-quote adahybrid">
                     Post a Master’s degree in English Education, she has held jobs ranging from tarot card reader to college instructor to nanny to professional dominatrix, all while being her misfit self.  Some current interests include memoir writing, social justice initiatives, the psychology of sexual desire, hand crafting jewelry, and the online perusing of architecturally amazing home furnishings she cannot afford.
-                    <br></br>
+                  </p>
+                  <p className="thin-text about-quote adahybrid">
                     Birdie sees Misfitter Podcast as a welcoming space where she and Beth get to fairy godmother the fuck out of NYC misfits, pairing up awesome humans for like, lust and any love they see fit.
                   </p>
                 </div>
@@ -68,16 +71,16 @@ class About extends React.Component {
               <p className="thin-text about-quote adahybrid">
                 Beth and Birdie founded Misfitter Podcast one winter night while sharing coconut cake, cocktails, and the memories of their New York City, GenX past. They longed for that old-school, downtown vibe: the random, in-person, happenstance meetings, the search for “missed connections” on the back of the Village Voice…
               </p>
-              <p>
+              <p className="thin-text about-quote adahybrid">
                 Birdie found a faded photo: their early-90s “Free Advice” stand on the corner of 11th and Hudson Street. They had served as dating advisors, matchmakers, and fairy godmothers to a unique and wonderful hodgepodge of fellow misfits.
               </p>
-              <p>
+              <p className="thin-text about-quote adahybrid">
                 That winter night, they decided to do it all again. Another cardboard advice stand? No way! Beth and Birdie are no Luddites (well, maybe a little). They vibe on podcasts and technology, and (with some help) they developed a super-secret, misfit-matching algorithm (SSMMA). But could that algorithm beat Beth and Birdie’s (B&B’s) own old-school, matchmaking skills? They decided to find out. Game on!
               </p>
-              <p>
+              <p className="thin-text about-quote adahybrid">
                 Thus was born the Misfitter Podcast, a dating show created to bring together misfits of all kinds: square pegs, nonconformists, freaks, outliers, oddballs, weirdos, mavericks, iconoclasts, nerds, punks, and out-of-the-box-ers… and send them out on dates! Sound good? We think so!
               </p>
-              <p>
+              <p className="thin-text about-quote adahybrid">
                 Each week, the super-secret, misfit-matching algorithm chooses a match. And each week, Beth and Birdie (after fierce disagreements, more cake, wild threats and various libations) choose two people to send on a date. Both couples go on their dates (on us!) and return to the podcast to discuss their time together. Will B&B beat the SSMMA? Tune in to find out! Let’s get it on!
               </p>
             </div>
@@ -104,9 +107,11 @@ class About extends React.Component {
             <div className="aboutus-content">
               <p className="thin-text about-quote adahybrid">
                 Our Misfitter Match Quiz is our own—developed, written, and securely stored in-house. Your data is yours to mine.  Yep, that’s right. Misfitter Podcast will NEVER sell your information, your answers or your photos on the downlow to third party entities. We are not interested in data-mining your private lives or Russian botting you into a rabbit hole of ad-click hell.
-                <br></br>
+              </p>
+              <p className="thin-text about-quote adahybrid">
                 Please note: Once you have sent your form, you have contractually agreed to the following: If you do not show up for an agreed-upon date, you will be financially liable for date-related costs incurred. While on the date, you agree to share at least three social media updates. Finally, you will appear on Misfitter Podcast to discuss your dating experience (we all want to know!).
-                <br></br>
+              </p>
+              <p className="thin-text about-quote adahybrid">
                 MisfitterNYC assumes no liability for any dating mishaps, disasters, hurt feelings, or mishegas.
                 Date responsibly and have fun!
               </p>
