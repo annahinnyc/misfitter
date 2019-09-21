@@ -241,6 +241,7 @@ span.missing {
 
   .about-card {
     margin: 1em;
+    height: 100%;
   }
 
   .upload-card {
