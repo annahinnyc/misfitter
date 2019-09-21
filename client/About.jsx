@@ -85,13 +85,31 @@ class About extends React.Component {
             </div>
             <div className="aboutus-content">
               <p className="thin-text about-quote adahybrid">
-                  So how does this work?
-                  1. Click on our quiz, take it, and attach your photo.
-                  2. Follow us on Instagram and Twitter for updates.
-                  3. Listen to our podcast to find out if you’re the next one chosen to go on a date!
-                  4. We send you out on a date. You show up, share a few “special” moments through pictures and video, and have fun!
-                  5. You appear as a guest on our podcast and let us know what you did and how we did. Not chosen that week? More of a voyeur on the dating scene? No problem! Participate by listening and spreading the word.
-                  </p>
+                So how does this work?
+                <ol>
+                <li>Click on our quiz, take it, and attach your photo.</li>
+                <li>Follow us on Instagram and Twitter for updates.</li>
+                <li>Listen to our podcast to find out if you’re the next one chosen to go on a date!</li>
+                <li>We send you out on a date. You show up, share a few “special” moments through pictures and video, and have fun!</li>
+                <li>You appear as a guest on our podcast and let us know what you did and how we did. Not chosen that week? More of a voyeur on the dating scene? No problem! Participate by listening and spreading the word.</li>
+                </ol>
+              </p>
+            </div>
+          </div>
+
+          <div className="card about-card lavender lighten-4">
+            <div className="card-content">
+              <h3 class="adahybrid">#mineyourownbusiness</h3>
+            </div>
+            <div className="aboutus-content">
+              <p className="thin-text about-quote adahybrid">
+                Our Misfitter Match Quiz is our own—developed, written, and securely stored in-house. Your data is yours to mine.  Yep, that’s right. Misfitter Podcast will NEVER sell your information, your answers or your photos on the downlow to third party entities. We are not interested in data-mining your private lives or Russian botting you into a rabbit hole of ad-click hell.
+                <br></br>
+                Please note: Once you have sent your form, you have contractually agreed to the following: If you do not show up for an agreed-upon date, you will be financially liable for date-related costs incurred. While on the date, you agree to share at least three social media updates. Finally, you will appear on Misfitter Podcast to discuss your dating experience (we all want to know!).
+                <br></br>
+                MisfitterNYC assumes no liability for any dating mishaps, disasters, hurt feelings, or mishegas.
+                Date responsibly and have fun!
+              </p>
             </div>
           </div>
 

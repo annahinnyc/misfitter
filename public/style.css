@@ -137,7 +137,6 @@ span.missing {
 
 .aboutus-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 h5.aboutus-content {
