@@ -67,16 +67,17 @@ class About extends React.Component {
             <div className="aboutus-content">
               <p className="thin-text about-quote adahybrid">
                 Beth and Birdie founded Misfitter Podcast one winter night while sharing coconut cake, cocktails, and the memories of their New York City, GenX past. They longed for that old-school, downtown vibe: the random, in-person, happenstance meetings, the search for “missed connections” on the back of the Village Voice…
-                <br></br>
-                <br></br>
+              </p>
+              <p>
                 Birdie found a faded photo: their early-90s “Free Advice” stand on the corner of 11th and Hudson Street. They had served as dating advisors, matchmakers, and fairy godmothers to a unique and wonderful hodgepodge of fellow misfits.
-                <br></br>
-                <br></br>
+              </p>
+              <p>
                 That winter night, they decided to do it all again. Another cardboard advice stand? No way! Beth and Birdie are no Luddites (well, maybe a little). They vibe on podcasts and technology, and (with some help) they developed a super-secret, misfit-matching algorithm (SSMMA). But could that algorithm beat Beth and Birdie’s (B&B’s) own old-school, matchmaking skills? They decided to find out. Game on!
-                <br></br>
-                <br></br>
+              </p>
+              <p>
                 Thus was born the Misfitter Podcast, a dating show created to bring together misfits of all kinds: square pegs, nonconformists, freaks, outliers, oddballs, weirdos, mavericks, iconoclasts, nerds, punks, and out-of-the-box-ers… and send them out on dates! Sound good? We think so!
-                <br></br>
+              </p>
+              <p>
                 Each week, the super-secret, misfit-matching algorithm chooses a match. And each week, Beth and Birdie (after fierce disagreements, more cake, wild threats and various libations) choose two people to send on a date. Both couples go on their dates (on us!) and return to the podcast to discuss their time together. Will B&B beat the SSMMA? Tune in to find out! Let’s get it on!
               </p>
             </div>
@@ -97,10 +98,6 @@ class About extends React.Component {
               </p>
             </div>
 
-          </div>
-
-
-          <div className="card about-card lavender lighten-4">
             <div className="card-content">
               <h3 class="adahybrid">#mineyourownbusiness</h3>
             </div>
@@ -114,6 +111,7 @@ class About extends React.Component {
                 Date responsibly and have fun!
               </p>
             </div>
+
           </div>
 
         </div>
