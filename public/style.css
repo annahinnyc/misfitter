@@ -1,4 +1,5 @@
 @font-face { font-family: Maxtield; src: url('/assets/Maxtield.otf'); }
+@font-face { font-family: ADAHybrid; src: url('/assets/ADAHybrid-Medium.otf'); }
 
 body {
   font-size: 20px;
@@ -12,7 +13,7 @@ body {
 }
 
 h3,h4,h5,h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "ADAHybrid", sans-serif;
 }
 
 .lavender {
