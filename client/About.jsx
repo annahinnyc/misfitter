@@ -12,18 +12,14 @@ class About extends React.Component {
     return (
       <div className="about wow fadeInUp">
         <div className="container">
-          <div className="card medium about-card grey lighten-4 z-depth-4">
+          <div className="card medium about-card lavender lighten-4 z-depth-4">
             <div className="card-content">
               <h5 class="maxtield">ABOUT US</h5>
             </div>
 
-            <div className="card-content">
-              <div id="beth" className="row">
-                <div className="col s12 m6">
-                  <img className="responsive-img z-depth-2 avatar" src="" />
-                </div>
-
-                <div className="col s12 m6">
+            <div className="aboutus-content">
+              <div id="beth" className="">
+                <div className="">
                   <h4>Beth</h4>
                   <h5>Founder</h5>
                   <div>
@@ -42,12 +38,8 @@ class About extends React.Component {
                 </div>
 
               </div>
-              <div id="birdie" className="row">
-                <div className="col s12 m6">
-                  <img className="responsive-img z-depth-2 avatar" src="" />
-                </div>
-
-                <div className="col s12 m6">
+              <div id="birdie" className="">
+                <div className="">
                   <h4>Birdie</h4>
                   <h5>Founder</h5>
                   <div>

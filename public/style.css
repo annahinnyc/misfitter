@@ -130,31 +130,14 @@ span.missing {
   position: relative;
 }
 
-.speech-card {
-  min-height: 107px;
-}
-
-.script-text {
-  max-height: 600px;
-  overflow: hidden;
-  overflow-y: scroll;
-}
-
-.upload-card {
-  margin: 5em;
-  box-shadow: none;
-  background-color: inherit;
-  min-height: 203px;
+.aboutus-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .info-card {
   height: 300px;
   padding-top: 2.1em;
-}
-
-.upload {
-  margin-top: 2em;
-  max-width: 95%;
 }
 
 #login {
