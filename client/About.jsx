@@ -86,7 +86,7 @@ class About extends React.Component {
             <div className="aboutus-content">
               <p className="thin-text about-quote adahybrid">
                 So how does this work?
-                <ol>
+                <ol className="aboutus-ordered-list">
                 <li>Click on our quiz, take it, and attach your photo.</li>
                 <li>Follow us on Instagram and Twitter for updates.</li>
                 <li>Listen to our podcast to find out if you’re the next one chosen to go on a date!</li>
