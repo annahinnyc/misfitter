@@ -86,7 +86,7 @@ class About extends React.Component {
             </div>
 
             <div className="card-content">
-              <h3 class="adahybrid">#findyourfit</h3>
+              <h4 class="adahybrid">#findyourfit</h4>
             </div>
             <div className="aboutus-content">
               <p className="thin-text about-quote adahybrid">
@@ -102,7 +102,7 @@ class About extends React.Component {
             </div>
 
             <div className="card-content">
-              <h3 class="adahybrid">#mineyourownbusiness</h3>
+              <h4 class="adahybrid">#mineyourownbusiness</h4>
             </div>
             <div className="aboutus-content">
               <p className="thin-text about-quote adahybrid">
