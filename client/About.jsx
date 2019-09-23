@@ -78,7 +78,7 @@ class About extends React.Component {
                 That winter night, they decided to do it all again. Another cardboard advice stand? No way! Beth and Birdie are no Luddites (well, maybe a little). They vibe on podcasts and technology, and (with some help) they developed a super-secret, misfit-matching algorithm (SSMMA). But could that algorithm beat Beth and Birdie’s (B&B’s) own old-school, matchmaking skills? They decided to find out. Game on!
               </p>
               <p className="thin-text about-quote adahybrid">
-                Thus was born the Misfitter Podcast, a dating show created to bring together misfits of all kinds: square pegs, nonconformists, freaks, outliers, oddballs, weirdos, mavericks, iconoclasts, nerds, punks, and out-of-the-box-ers… and send them out on dates! Sound good? We think so!
+                Thus was born the Misfitter Podcast, a dating game created to bring together misfits of all kinds: square pegs, nonconformists, freaks, outliers, oddballs, weirdos, mavericks, iconoclasts, nerds, punks, and out-of-the-box-ers… and send them out on dates! Sound good? We think so!
               </p>
               <p className="thin-text about-quote adahybrid">
                 Each week, the super-secret, misfit-matching algorithm chooses a match. And each week, Beth and Birdie (after fierce disagreements, more cake, wild threats and various libations) choose two people to send on a date. Both couples go on their dates (on us!) and return to the podcast to discuss their time together. Will B&B beat the SSMMA? Tune in to find out! Let’s get it on!
@@ -86,7 +86,7 @@ class About extends React.Component {
             </div>
 
             <div className="card-content">
-              <h4 class="adahybrid">#findyourfit</h4>
+              <h4 class="adahybrid">#thepodcastdatinggame</h4>
             </div>
             <div className="aboutus-content">
               <p className="thin-text about-quote adahybrid">
